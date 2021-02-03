@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+        <!-- FONT AWESOME CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <!-- EMBEDDED CSS -->
+        <style>
+            #about_us
+            {
+                height: 800px;
+                background-image: url("../images/city1.jpg");
+                background-size: cover;
+            }
+            
+            #about_us_text
+            {
+                margin: 0 auto;
+                width: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- START OF NAVIGATION -->
+        <nav id="navigation">
+            <ul>
+                <li><a class="company_name" href="index.html"><b>TravelJournal</b></a></li>
+                <li><a class="link_item" href="index.html">Home</a></li>
+                <li><a class="link_item" href="places_to_visit_overview.html">Places to visit</a></li>
+                <li><a class="link_item active" href="about_us.html">About us</a></li>
+            </ul>
+        </nav>
+        <!-- END OF NAVIGATION -->
+
+        <!-- START OF ABOUT US SECTION-->
+        <div class="category" id="about_us" onmousedown="easterEgg()" onmouseup="quitEasterEgg()">
+            <div id="about_us_text">
+                <h1>A glimpse about us.</h1>
+                <p>This is a story about our simple yet rich website, TravelJournal. This website was founded as a part of our startup movement and to fulfill the requirement to pass the learning module. Rather than just finishing the website and leave it, together as a team we decided that the journey does not end here. Instead, it starts now.</p>
+                <p>We have a dream to capture every traveler's experiences and stories, so we can have a greater knowledge and insight of a country. We also hope that this website can inspire a lot of people to be brave and eager to travel around the world. Here, we believe that you start seeing the world once you leave your home.</p>
+                <p>So, enjoy your time. Come back home later when you have something to share with the world. Happy travelling!</p>
+            </div>
+        </div>
+        <!-- END OF ABOUT US SECTION-->
+
+        <!-- START OF FOOTER SECTION-->
+        <footer id="footer">
+            <div class="block">
+                <p><a class="link_item" href="#">Terms and condition</a></p>
+                <p><a class="link_item" href="#">Privacy policy</a></p>
+            </div>
+
+            <!-- Logo from FontAwesome -->
+            <i class="icon fab fa-facebook"></i>
+            <i class="icon fab fa-twitter"></i>
+            <i class="icon fab fa-linkedin"></i>
+            <i class="icon fab fa-instagram"></i>
+        </footer>
+        <!-- END OF FOOTER SECTION-->
+
+        <script type="text/javascript">
+        // JAVASCRIPT FUNCTION 5: EASTER EGG, TRIGGERED BY HOLDING DOWN THE MOUSE ON THE ABOUT US PAGE
+        function easterEgg()
+        {
+            var aboutUsSection = document.getElementById("about_us");
+            aboutUsSection.style.backgroundImage = "url(../images/special_thanks.jpg)";
+            aboutUsSection.style.backgroundSize = "contain";
+            aboutUsSection.style.backgroundPosition = "center";
+            aboutUsSection.style.backgroundRepeat = "no-repeat";
+            document.getElementById("about_us_text").style.visibility = "hidden";
+        }
+
+        function quitEasterEgg()
+        {
+            var aboutUsSection = document.getElementById("about_us");
+            aboutUsSection.style.backgroundImage = "url(../images/city1.jpg)";
+            aboutUsSection.style.backgroundSize = "cover";
+            document.getElementById("about_us_text").style.visibility = "visible";
+        }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Places to Visit - Travel Journal</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <script type="text/javascript" src="../scripts/script.js"></script>
+
+        <!-- FONT AWESOME CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <!-- EMBEDDED CSS -->
+        <style>
+            body
+            {
+                margin: 0 auto;
+            }
+            #places_to_visit_overview
+            {
+                background-size:cover;
+                background-position: center;
+                background-image: url(../images/places-to-visit-background.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+            #content
+            {
+                background-color: white;
+                background: rgba(255,255,255,0.8);
+                width: 1500px;
+                margin: 0 auto;
+                padding: 2em;
+                
+            }
+            .country_picture
+            {
+                padding-right:5em;
+                padding-left: 5em;
+                padding-top: 5em;
+            }
+            #places_to_visit_overview table
+            {
+                padding-left: 5em;
+                padding-bottom: 5em;
+            }
+            .country_name
+            {
+                font-style: oblique;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .country_image
+            {
+                border: dashed 10px;
+                padding: 5px;
+                border-color: black;
+            }
+            .country
+            {
+                color: black;
+                text-decoration: none;
+            }
+            #places_to_visit_opening
+            {
+                font-size: 25px;
+                font-family:cursive;
+                text-align: center;
+                padding-top: 1em;
+            }
+            #random_location_button:hover
+            {
+                cursor: pointer;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body onload="smallMessage()">
+        <nav id="navigation">
+            <ul>
+                <li><a class="company_name" href="index.html"><b>Travel Journal</b></a></li>
+                <li><a class="link_item" href="index.html">Home</a></li>
+                <li><a class="link_item active" href="places_to_visit_overview.html">Places to visit</a></li>
+                <li><a class="link_item" href="about_us.html">About us</a></li>
+            </ul>
+        </nav>
+        
+        <div class="category" id="places_to_visit_overview">
+        <div id="content"> 
+        <h1>Places to Visit</h1>
+        
+            <p id="places_to_visit_opening"> Click the picture below! Then, it will guide you to the country you wish to know about starting from the famous places that are good for excursion until the culture of each country that makes you as a visitor can  easily adapt to the country you wish to come.</p>
+            <table>
+               <tr>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/italy_country.html">
+                            <img src="../images/Italy-cover.jpg" alt="Italy" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/russia_country.html">
+                            <img src="../images/country/Russia/Russia-cover.jpg" alt="Russia" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/italy_country.html" class="country">Italy</a>
+                    </td>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/russia_country.html" class="country">Russia</a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/indonesia_country.html">
+                            <img src="../images/Indonesia-cover.jpg" alt="Indonesia" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/seychelles_country.html">
+                            <img src="../images/country/Seychelles/Seychelles-cover.jpg" alt="Seychelles" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/indonesia_country.html" class="country">Indonesia</a>
+                    </td>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/seychelles_country.html" class="country">Seychelles</a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/japan_country.html">
+                            <img src="../images/Japan-cover.jpg" alt="Japan" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/malaysia_country.html">
+                            <img src="../images/Malaysia-cover.jpg" alt="Malaysia" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/japan_country.html" class="country">Japan</a>
+                    </td>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/malaysia_country.html" class="country">Malaysia</a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/turkey_country.html">
+                            <img src="../images/Turkey-cover.jpg" alt="Turkey" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                    <td class="country_picture">
+                        <a href="places_to_visit/country/france_country.html">
+                            <img src="../images/france_cover.jpg" alt="Dubai" height="400px" width="500px" class="country_image">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/turkey_country.html" class="country">Turkey</a>
+                    </td>
+                    <td class="country_name">
+                        <a href="places_to_visit/country/france_country.html" class="country">France</a>
+                    </td>
+                </tr> 
+            </table>
+            <div>
+                <p>Confused which country to start? Click below and let us choose one randomly for you! :)</p>
+                <input id="random_location_button" type="button" value="Click to start!" onclick="generateLocation()">
+            </div>
+        </div>  
+        </div>
+        
+        <footer id="footer">
+            <div class="block">
+                <p><a class="link_item" href="#">Terms and condition</a></p>
+                <p><a class="link_item" href="#">Privacy policy</a></p>
+            </div>
+            
+            <i class="icon fab fa-facebook"></i>
+            <i class="icon fab fa-twitter"></i>
+            <i class="icon fab fa-linkedin"></i>
+            <i class="icon fab fa-instagram"></i>
+            
+        </footer>
+    </body>
+</html>

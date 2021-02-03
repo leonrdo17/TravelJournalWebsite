@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Travel Journal</title>
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <script type="text/javascript" src="../scripts/script.js"></script>
+
+        <!-- FONT AWESOME CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <!-- EMBEDDED CSS -->
+        <style>
+            #intro
+            {
+                height: 400px;
+                background-image: url("../images/beach1.jpg");
+                background-size: cover;
+            }
+
+            #intro_text
+            {
+                margin-top: 100px;
+                margin-right: 50px;
+                text-align: right;
+                color: white;
+            }
+
+            #places_to_visit_text
+            {
+                margin-top: 25px;
+                margin-left: 50px;
+                text-align: left;
+                color: black;
+            }
+
+            #places_to_visit_overview
+            {
+                height: 400px;
+                background-image: url("../images/plane1.jpg");
+                background-size: cover;
+            }
+
+            #places_to_visit_button
+            {
+                margin-bottom: 1.25em;
+            }
+            #places_to_visit_button:hover
+            {
+                cursor: pointer;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        </style>
+
+        
+    </head>
+    <body onload="welcomeUser()">
+        <!-- START OF NAVIGATION -->
+        <nav id="navigation">
+            <ul>
+                <li><a class="company_name" href="index.html"><b>TravelJournal</b></a></li>
+                <li><a class="link_item active" href="index.html">Home</a></li>
+                <li><a class="link_item" href="places_to_visit_overview.html">Places to visit</a></li>
+                <li><a class="link_item" href="about_us.html">About us</a></li>
+            </ul>
+        </nav>
+        <!-- END OF NAVIGATION -->
+
+        <!-- START OF INTRO SECTION-->
+        <div class="category" id="intro" onmouseover="changePicture1()" onmouseout="returnPicture1()">
+            <div id="intro_text">
+                <h1 id="greeting_text">Hello, world!</h1>
+                <p>Welcome to TravelJournal,<br>where travelers around the world share stories and experiences.<br>It could be their stories, and it could be yours too.</p>
+            </div>
+        </div>
+        <!-- END OF INTRO SECTION-->
+        
+        <!-- START OF PLACES TO VISIT SECTION-->
+        <div class="category" id="places_to_visit_overview" onmouseover="changePicture2()" onmouseout="returnPicture2()">
+            <div id="places_to_visit_text">
+                <h1>Sky is the only limit.</h1>
+                <p>Everyone deserves the right to travel.<br>Open the journal now, and choose your next destination.</p>
+
+                <input type="button" class="button" id="places_to_visit_button" value="Places to visit">
+            </div>
+        </div>
+        <!-- END OF PLACES TO VISIT SECTION-->
+
+        <!-- START OF FOOTER SECTION-->
+        <footer id="footer">
+            <div class="block">
+                <p><a class="link_item" href="#">Terms and condition</a></p>
+                <p><a class="link_item" href="#">Privacy policy</a></p>
+            </div>
+
+            <!-- Logo from FontAwesome -->
+            <i class="icon fab fa-facebook"></i>
+            <i class="icon fab fa-twitter"></i>
+            <i class="icon fab fa-linkedin"></i>
+            <i class="icon fab fa-instagram"></i>
+        </footer>
+        <!-- END OF FOOTER SECTION-->
+
+        <script type="text/javascript">
+        // JAVASCRIPT FUNCTION 3: redirect the button click to another page
+        var placesToVisitButton = document.getElementById("places_to_visit_button");
+        placesToVisitButton.onclick = function() {
+            location.href = "places_to_visit_overview.html";
+        }
+
+        // JAVASCRIPT FUNCTION 4: change the background of the homepage by hovering over the image
+        function changePicture1()
+        {
+            document.getElementById("intro").style.backgroundImage = "url(../images/beach3.jpg)";
+        }
+
+        function returnPicture1()
+        {
+            document.getElementById("intro").style.backgroundImage = "url(../images/beach1.jpg)";
+        }
+
+        function changePicture2()
+        {
+            document.getElementById("places_to_visit_overview").style.backgroundImage = "url(../images/airplane.jpg)";
+        }
+
+        function returnPicture2()
+        {
+            document.getElementById("places_to_visit_overview").style.backgroundImage = "url(../images/plane1.jpg)";
+        }
+
+        </script>
+    </body>
+</html>
